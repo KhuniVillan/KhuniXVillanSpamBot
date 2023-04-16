@@ -3,7 +3,7 @@ import sys
 from sys import argv
 import glob
 from pathlib import Path
-from DEADLYSPAM.utils import load_plugins
+from KHUNISPAM.utils import load_plugins
 import logging
 from telethon import events
 from . import BOT0, BOT1, BOT2, BOT3, BOT4, BOT5, BOT6, BOT7, BOT8, BOT9
@@ -12,7 +12,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 
-path = "DEADLYSPAM/plugins/*.py"
+path = "KHUNISPAM/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -20,7 +20,7 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-deadly = "🎉 Successfully Deployed Deadly SpamBot 🎉 @DEADLY_SPAM_BOT Enjoy! Do visit @Deadly_Spambot"
+Khuni = "🎉 Successfully Deployed Khuni SpamBot 🎉 @Khuni_X_Villan_Support_Group Enjoy! Do visit @Khuni_X_Villan_Support_Group"
 print(deadly[0: ])
 
 if __name__ == "__main__":
